@@ -1,0 +1,22 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: order-service
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: public
+        group: DEFAULT_GROUP
+        file-extension: yml
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: public
+        cluster-name: DEFAULT
+  config:
+    import:
+      - optional:nacos:${spring.application.name}.yml
+      - optional:nacos:user-service-jetcache.yml
+
+
