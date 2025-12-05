@@ -17,6 +17,5 @@ spring:
   config:
     import:
       - optional:nacos:${spring.application.name}.yml
-      - optional:nacos:user-service-jetcache.yml
-
+      - nacos:user-service-client.yml
 
