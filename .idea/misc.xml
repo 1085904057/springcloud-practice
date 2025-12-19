@@ -9,6 +9,8 @@
         <option value="$PROJECT_DIR$/microservice-b/pom.xml" />
         <option value="$PROJECT_DIR$/user-api/pom.xml" />
         <option value="$PROJECT_DIR$/tomcat-service/pom.xml" />
+        <option value="$PROJECT_DIR$/common/pom.xml" />
+        <option value="$PROJECT_DIR$/common-core/pom.xml" />
       </list>
     </option>
   </component>
