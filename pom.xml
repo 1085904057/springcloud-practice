@@ -14,6 +14,7 @@
         <module>user-service</module>
         <module>user-api</module>
         <module>common-core</module>
+        <module>java-basic</module>
     </modules>
 
     <properties>

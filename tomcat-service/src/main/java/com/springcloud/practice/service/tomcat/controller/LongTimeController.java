@@ -4,6 +4,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpHeaders;
 import org.springframework.web.bind.annotation.*;
 
+import javax.sql.DataSource;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -14,6 +15,8 @@ public class LongTimeController {
         String userAgent = request.getHeader(HttpHeaders.USER_AGENT);
         Thread.sleep(10000);
         System.out.println(LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")) + "----->" + userAgent);
+
+        DataSource
         return "good";
     }
 }
